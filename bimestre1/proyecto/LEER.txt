@@ -1,0 +1,20 @@
+
+
+
+		SERVIDOR 						                            CLIENTE
+1 Se inicia el servidor. 									Se inicia el cliente.
+2 El servidor pide que se ingrese un nombre de              El cliente pide que se ingrese un nombre de usuario por teclado.
+  usuario por teclado.
+3 El usuario ingresa un nombre de usuario			        El usuario ingresa un nombre de usuario
+
+4 El nombre de usuario ingresado es enviado al cliente.		El nombre de usuario ingresado es enviado al servidor.
+5 El servidor inmediatamente pide que se ingrese 			El cliente inmediatamente pide que se ingrese un mensaje para enviarlo al servidor.
+  un mensaje para enviarlo al cliente.
+
+6. ------------------------------------------- 				El usuario ingresa un mensaje y lo envía al servidor.
+7. El servidor recibe el mensaje del cliente y lo 
+   imprime en pantalla.
+
+
+
+
