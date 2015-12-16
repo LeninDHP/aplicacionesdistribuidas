@@ -1,0 +1,21 @@
+Cuanto se demora en atender a los dos clientes el
+servidor de un solo hilo y cuanto se demora el servidor multihilos?
+porqué existe esta diferencia de tiempos?
+
+
+En el servidor de un solo hilo se demora 80 segundos a causa de que segundo hilo debe esperar a que termine primer 
+el hilo, para que el servidor atienda al otro cliente. EL tiempo se detalla a continuacion:
+
+- segundo 20  inserta el name y el port del primer cliente
+- segundo 40  inserta el name y el port del segundo cliente
+- segundo 60  busca el name del primer cliente
+- segundo 80  busca el name del segundo cliente
+
+
+
+
+En cambio en el servidor multihilo, se demora 40 segundos en terminar todos los procesos, los dos corren al mismo tiempo, ningun proceso interviene en el funcionamiento del otro, por lo que demora alrededor de 40 segundos en atender a los 2 clientes. 
+
+
+- segundo 20  inserta el name y el port del primer y segundo cliente
+- segundo 40  busca el name del primer y segundo cliente
