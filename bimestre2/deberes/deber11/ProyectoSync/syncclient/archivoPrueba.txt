@@ -1,0 +1,16 @@
+package filesync;
+
+/**
+ * Esta es la clase principal del cliente.
+ * Esta clase realiza algunas validaciones de los parámetros que
+ * puede recibir, entre estos parámetros están:
+ *  String host: El servidor al que debe conectarse
+ *  String filename: El nombre del archivo local que desea sincronizar
+ *  String action: La accion que desea realizar, puede ser:
+ *    - commit: subir los cambios al servidor
+ *    - update: actualizar su copia local con los cambios del servidor
+ *  int blockSize: El tamaño de los bloques en los que serán partidos los archivos.
+ * 
+ * @author edwinsp
+ * @date 8th April 2013
+ */
